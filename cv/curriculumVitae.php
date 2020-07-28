@@ -190,37 +190,68 @@
             <h2>Expérience</h2>
             <table>
                 <?php
-                foreach ($data->experiences as $experience) {
-                    ?>
-                    <tr>
-                        <td>
-                            <p class="date"><?= $experience->dateStart . "-" . $experience->dateEnd ?></p>
-                            <p><?= $experience->location ?></p>
-                        </td>
-                        <td>
-                            <h3 class="titre"><?= $experience->title ?></h3>
-                            <p class="details">
-                                <?= $experience->description ?>
-                            </p>
-                            <?php
-                            if (property_exists($training, "usedLanguage")) {
-                                ?>
-                                <p class="language">
+                foreach ($data->experiences as $experience):
+                    if ($experience->display):
+                        ?>
+                        <tr>
+                            <td>
+                                <p class="date"><?= $experience->dateStart . "-" . $experience->dateEnd ?></p>
+                                <p><?= $experience->location ?></p>
+                            </td>
+                            <td>
+                                <h3 class="titre"><?= $experience->title ?></h3>
+                                <p class="details">
                                     <?php
-                                    $languages = "";
-                                    foreach ($training->usedLanguage as $language) {
-                                        $languages .= $language . ", ";
-                                    }
-                                    echo trim($languages, ", ");
+                                    if (property_exists($experience, "project")) :
+                                    foreach ($experience->project as $nameProject => $details):
                                     ?>
+                                <ul>
+                                    <li>
+                                        <?= $nameProject ?> (
+                                        <?php
+                                        $lang = "";
+                                        foreach ($details->language as $language):
+                                            $lang .= $language . ", ";
+                                        endforeach;
+                                        ?>
+                                        <span class="language"><?= trim($lang, ', ') ?></span>
+                                        )
+                                        <ul>
+                                            <?php
+                                            foreach ($details->link as $type => $link):
+                                                echo "<li>$type : <a href='$link'>$link</a></li>";
+                                            endforeach;
+                                            ?>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <?php
+                                endforeach;
+                                else:
+                                    echo $experience->description;
+                                endif;
+                                ?>
                                 </p>
                                 <?php
-                            }
-                            ?>
-                        </td>
-                    </tr>
+                                if (property_exists($training, "usedLanguage")) {
+                                    ?>
+                                    <p class="language">
+                                        <?php
+                                        $languages = "";
+                                        foreach ($training->usedLanguage as $language) {
+                                            $languages .= $language . ", ";
+                                        }
+                                        echo trim($languages, ", ");
+                                        ?>
+                                    </p>
+                                    <?php
+                                }
+                                ?>
+                            </td>
+                        </tr>
                     <?php
-                }
+                    endif;
+                endforeach;
                 ?>
             </table>
         </article>

@@ -71,6 +71,16 @@
       "title": "Développeur web",
       "description": "Projet 1: L'art rend visible (<span class=\"language\">HTML, CSS</span>)<br>Projet 2: Blog (<span class=\"language\">HTML, CSS, PHP, SQL</span>)",
       "project": {
+        "L'art rend visible": {
+          "language": [
+            "HTML",
+            "CSS"
+          ],
+          "link": {
+            "github": "https://github.com/madraz79/artvisible",
+            "web": "https://site.madraz.fr/artvisible/"
+          }
+        },
         "API Catalogue Produit": {
           "language": [
             "HTML",
@@ -129,7 +139,7 @@
       "location": "GARANKA (78)"
     },
     {
-      "display": true,
+      "display": false,
       "title": "Technicien de maintenance en chauffage",
       "description": "Réparation d'eau chaude et chauffage.",
       "dateStart": 2003,
@@ -137,7 +147,7 @@
       "location": "CGST SAVE (78)"
     },
     {
-      "display": true,
+      "display": false,
       "title": "Manager",
       "description": "Gestion d'équipe, organisation du travail.",
       "dateStart": 2001,
