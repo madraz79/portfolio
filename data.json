@@ -1,0 +1,186 @@
+{
+  "identity": {
+    "lastName": "Madraz",
+    "firstName": "Abdelmoutaleb",
+    "birthday": "1979-07-16",
+    "address": {
+      "number": "4 ter",
+      "street": "rue du Général Ailleret",
+      "postalCode": "78200",
+      "city": "Mantes la jolie",
+      "country": "France"
+    },
+    "email": "madraz.abdel@gmail.com",
+    "phone": "07 54 36 79 36"
+  },
+  "languages": {
+    "Anglais": "technique",
+    "Français": "courant",
+    "Arabe": "natale"
+  },
+  "programingLanguages": {
+    "Back-end": {
+      "PHP": 50,
+      "SQL": 50
+    },
+    "Front-end": {
+      "ECMASCRIPT": 50,
+      "HTML": 70,
+      "CSS": 70
+    }
+  },
+  "training": [
+    {
+      "display": true,
+      "title": "Full Stack Développement",
+      "description": "Formation Développeur web, Niveau BTS.",
+      "usedLanguage": [
+        "HTML",
+        "CSS",
+        "ECMASCRIPT",
+        "PHP",
+        "SQL"
+      ],
+      "dateStart": 2019,
+      "dateEnd": 2021,
+      "location": "Centre de formation COS (77)",
+      "degree": "en cours"
+    },
+    {
+      "display": true,
+      "title": "Déssinateur projeteur en Béton Armé - Travaux Public - Niveau 3",
+      "description": "Dessinateur projeteur sur Autocad.",
+      "dateStart": 2008,
+      "dateEnd": 2009,
+      "location": "Afpa (77)",
+      "degree": "obtenu"
+    },
+    {
+      "display": true,
+      "title": "DUT Electrotechnique",
+      "description": "Calcul groupe électrogène monophasé et triphasé.",
+      "dateStart": 1999,
+      "dateEnd": 2001,
+      "location": "Institut universitaire (Maroc)",
+      "degree": "obtenu"
+    }
+  ],
+  "experiences": [
+    {
+      "display": true,
+      "title": "Développeur web",
+      "description": "Projet 1: L'art rend visible (<span class=\"language\">HTML, CSS</span>)<br>Projet 2: Blog (<span class=\"language\">HTML, CSS, PHP, SQL</span>)",
+      "project": {
+        "L'art rend visible": {
+          "language": [
+            "HTML",
+            "CSS"
+          ],
+          "link": {
+            "github": "https://github.com/madraz79/artvisible",
+            "web": "https://site.madraz.fr/artvisible/"
+          }
+        },
+        "API Catalogue Produit": {
+          "language": [
+            "HTML",
+            "CSS",
+            "JS",
+            "JSON"
+          ],
+          "link": {
+            "github": "https://github.com/madraz79/Platforme_Gestion_Ecommerce",
+            "web": "https://site.madraz.fr/api"
+          }
+        },
+        "Blog": {
+          "language": [
+            "HTML",
+            "CSS",
+            "PHP",
+            "SQL"
+          ],
+          "link": {
+            "github": "https://github.com/madraz79/blog",
+            "web": "https://site.madraz.fr/blog/"
+          }
+        },
+        "Portfolio": {
+          "language": [
+            "HTML",
+            "CSS",
+            "PHP",
+            "SQL"
+          ],
+          "link": {
+            "github": "",
+            "web": "https://madraz.fr/"
+          }
+        }
+      },
+      "dateStart": 2019,
+      "dateEnd": 2021,
+      "location": "Centre de formation COS (77)"
+    },
+    {
+      "display": true,
+      "title": "Reconversion professionnelle",
+      "description": "Reconversion vers le métier développeur.",
+      "dateStart": 2017,
+      "dateEnd": 2019,
+      "location": "Cabinet SODIE (78)"
+    },
+    {
+      "display": true,
+      "title": "Technicien de maintenance en chauffage",
+      "description": "Réparation d'eau chaude et chauffage.",
+      "dateStart": 2009,
+      "dateEnd": 2017,
+      "location": "GARANKA (78)"
+    },
+    {
+      "display": true,
+      "title": "Technicien de maintenance en chauffage",
+      "description": "Réparation d'eau chaude et chauffage.",
+      "dateStart": 2003,
+      "dateEnd": 2009,
+      "location": "CGST SAVE (78)"
+    },
+    {
+      "display": true,
+      "title": "Manager",
+      "description": "Gestion d'équipe, organisation du travail.",
+      "dateStart": 2001,
+      "dateEnd": 2003,
+      "location": "McDonald's (78)"
+    }
+  ],
+  "knowledge": [
+    "Management",
+    "Autocad",
+    "Visual studio code",
+    "Facilité d'adaptation",
+    "Suite office"
+  ],
+  "hobbies": [
+    {
+      "title": "Voyages"
+    },
+    {
+      "title": "Sport",
+      "details": [
+        "Natation",
+        "Football"
+      ]
+    }
+  ],
+  "skills": [
+    "Réaliser une interface utilisateur web statique et adaptable (<span class=\"language\">HTML+CSS</span>).",
+    "Développer une interface utilisateur web dynamique (<span class=\"language\">EcmaScript</span>).",
+    "Développer la partie back-end (<span class=\"language\">PHP</span>)",
+    "Conception et réalisation d’une base de données (<span class=\"language\">SQL</span>)",
+    "Réaliser une interface utilisateur avec un CMS (<span class=\"language\">Wordpress</span>).",
+    "Elaborer et mettre en œuvre des composants dans un CMS (<span class=\"language\">Wordpress</span>).",
+    "Maquetter une application (<span class=\"language\">Figma, Adobe XD</span>)."
+  ]
+}

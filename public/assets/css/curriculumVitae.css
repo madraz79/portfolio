@@ -1,0 +1,177 @@
+html {
+    width: 210mm;
+    height: 297mm;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 21cm;
+    height: 29.7cm;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+}
+
+img {
+    width: 100%;
+}
+
+table tr td:first-child {
+    width: 40px;
+    height: 40px;
+    padding-right: 15px;
+}
+
+table tr td:first-child img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Page Breaks */
+/***Always insert a page break before the element***/
+.pb_before {
+    page-break-before: always !important;
+}
+
+/***Always insert a page break after the element***/
+.pb_after {
+    page-break-after: always !important;
+}
+
+/***Avoid page break before the element (if possible)***/
+.pb_before_avoid {
+    page-break-before: avoid !important;
+}
+
+/***Avoid page break after the element (if possible)***/
+.pb_after_avoid {
+    page-break-after: avoid !important;
+}
+
+/* Avoid page break inside the element (if possible) */
+.pbi_avoid {
+    page-break-inside: avoid !important;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+#info, #main {
+    vertical-align: top;
+    position: absolute;
+    top: 0;
+    height: 1401px;
+}
+
+#info {
+    width: 32%;
+    left: 0;
+    background: #303b41;
+    color: #FFFFFF;
+}
+
+#info #photo {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+
+#info #photo img {
+    width: 100%;
+    height: 100%;
+}
+
+#info h2 {
+    background: #fe7676;
+    line-height: 20mm;
+    text-align: center;
+    width: calc(100% + 15px);
+    margin: 10px -15px;
+}
+
+#info #langues h2 {
+    background: #adc646;
+}
+
+#info #langues td {
+    height: auto;
+}
+
+#info #knowledge h2 {
+    background: #f7941d;
+}
+
+#info #hobbies h2 {
+    background: #1da7f7;
+}
+
+
+#main {
+    width: 65%;
+    right: 0;
+    padding: 2px 5px 0 0;
+}
+
+#main h1 {
+    color: #fe7679;
+    text-align: center;
+    width: 100%;
+    font-size: 36pt;
+}
+
+#main h3 {
+    font-size: 12pt;
+    margin: 0;
+}
+
+#main table {
+    width: 100%;
+}
+
+#main table td {
+    vertical-align: top;
+    width: 70%;
+    padding-bottom: 20px;
+}
+
+#main table td p {
+    margin: 0;
+    padding: 0;
+}
+
+#main table td p.date {
+    color: #7fa4b7;
+    font-size: 10pt;
+}
+
+#main table td:first-child {
+    width: 30%;
+    color: #988976;
+}
+
+#main .site {
+    color: #8e6e9a;
+}
+
+#main .titre {
+    color: #22919a;
+}
+
+#main .details {
+    color: #616161;
+    font-style: italic;
+    font-size: 10pt;
+}
+
+#main .language {
+    color: #cdb95d;
+}

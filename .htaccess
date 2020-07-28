@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^(.*)$ https://abdel.vincentdercourt.fr/$1 [L,R=301,NC]

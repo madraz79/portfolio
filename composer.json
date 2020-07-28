@@ -1,0 +1,17 @@
+{
+  "name": "abdel/portfolio",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "abdel",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+    "mikehaertl/phpwkhtmltopdf": "^2.4",
+    "ext-json": "*",
+    "php": "^7.4"
+  }
+}

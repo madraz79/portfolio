@@ -1,0 +1,9 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_URI} !(\.css|\.map|\.js|\.png|\.jpg|\.gif|\.ico|\.svg|robots\.txt|\.eot|\.woff|\.woff2|\.ttf|\.xml|erreur500.html)$ [NC]
+RewriteCond %{REQUEST_FILNAME} !-f
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+
+ErrorDocument 403 /error403.html
+ErrorDocument 404 /error404.html
+ErrorDocument 500 /error500.html
