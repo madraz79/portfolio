@@ -1,3 +1,9 @@
+<?php
+if (!isset($data)) {
+    $data = new stdClass();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -9,15 +15,19 @@
 <body>
 <div class="page1 pb_before pb_after">
     <!--  Gauche-->
-    <section id="info">
-        <!--        <header id="photo"><img src="img/cv/photoRond.png" alt="photo"></header>-->
-        <section style="padding: 15px;">
+    <div id="info">
+        <header id="photo">
+            <div class="roundedImage">
+                <img src="img/main_photo.jpg" alt="portrait de moi">
+            </div>
+        </header>
+        <div>
             <article id="contact">
                 <h2>Contact</h2>
                 <table>
                     <tr>
                         <td>
-                            <img src="img/cv/info.png" alt="">
+                            <img src="img/cv/info.png" alt="icon">
                         </td>
                         <td><?= strftime("%d %B %Y", strtotime($data->identity->birthday)) ?></td>
                     </tr>
@@ -45,8 +55,9 @@
                             <img src="img/cv/mail.png" alt="">
                         </td>
                         <td>
-                            <a href="mailto://<?= $data->identity->email ?>"
-                               title="mail"><?= $data->identity->email ?></a>
+                            <a href="mailto://<?= $data->identity->email ?>" title="mail">
+                                <?= $data->identity->email ?>
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -127,14 +138,16 @@
                     </ul>
                 </div>
             </article>
-        </section>
-    </section>
+        </div>
+    </div>
     <!--  Droite -->
     <section id="main">
         <h1><?= $data->identity->firstName . " " . $data->identity->lastName ?></h1>
         <h2 style="text-align: center">Développeur Web </h2>
-        <p style="text-align: center;margin:0;">Recherche de stage pour la période du <br> 26-10-20 au
-            05-03-21</p>
+        <p style="text-align: center;margin:0;">
+            Recherche de stage pour la période du <br>
+            26-10-20 au 05-03-21
+        </p>
         <!--    Skills -->
         <article id="skills">
             <h2>Compétences</h2>
@@ -145,7 +158,6 @@
                 }
                 ?>
             </ul>
-            </table>
         </article>
         <!--    Formation -->
         <article>
@@ -200,38 +212,51 @@
                             </td>
                             <td>
                                 <h3 class="titre"><?= $experience->title ?></h3>
-                                <p class="details">
+                                <div class="details">
                                     <?php
                                     if (property_exists($experience, "project")) :
-                                    foreach ($experience->project as $nameProject => $details):
-                                    ?>
-                                <ul>
-                                    <li>
-                                        <?= $nameProject ?> (
-                                        <?php
-                                        $lang = "";
-                                        foreach ($details->language as $language):
-                                            $lang .= $language . ", ";
-                                        endforeach;
-                                        ?>
-                                        <span class="language"><?= trim($lang, ', ') ?></span>
-                                        )
-                                        <ul>
-                                            <?php
-                                            foreach ($details->link as $type => $link):
-                                                echo "<li>$type : <a href='$link'>$link</a></li>";
-                                            endforeach;
+                                        foreach ($experience->project as $nameProject => $details):
                                             ?>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <?php
-                                endforeach;
-                                else:
-                                    echo $experience->description;
-                                endif;
-                                ?>
-                                </p>
+                                            <ul>
+                                                <li>
+                                                    <?= $nameProject ?> (
+                                                    <?php
+                                                    $lang = "";
+                                                    foreach ($details->language as $language):
+                                                        $lang .= $language . ", ";
+                                                    endforeach;
+                                                    ?>
+                                                    <span class="language"><?= trim($lang, ', ') ?></span>
+                                                    )
+                                                    <ul>
+                                                        <?php
+                                                        foreach ($details->link as $type => $link):
+                                                            echo "
+                                                            <li>
+                                                            $type : 
+                                                                <a href='$link'>
+                                                                    " . (str_replace(
+                                                                    [
+                                                                        "https://",
+                                                                        "http://"
+                                                                    ],
+                                                                    "",
+                                                                    $link
+                                                                )) . "
+                                                                </a>
+                                                            </li>";
+                                                        endforeach;
+                                                        ?>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        <?php
+                                        endforeach;
+                                    else:
+                                        echo $experience->description;
+                                    endif;
+                                    ?>
+                                </div>
                                 <?php
                                 if (property_exists($training, "usedLanguage")) {
                                     ?>

@@ -17,7 +17,8 @@ include PATHROOT . DS . "cv/curriculumVitae.php";
 $content = ob_get_clean();
 
 if (false) {
-    debug($content, __FILE__, __LINE__);
+    //debug($content, __FILE__, __LINE__);
+    echo $content;
     exit();
 } else {
     $pdf->addPage($content);

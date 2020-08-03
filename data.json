@@ -48,7 +48,7 @@
     },
     {
       "display": true,
-      "title": "Déssinateur projeteur en Béton Armé - Travaux Public - Niveau 3",
+      "title": "Déssinateur projeteur en Béton Armé <br> Travaux Public - Niveau 3",
       "description": "Dessinateur projeteur sur Autocad.",
       "dateStart": 2008,
       "dateEnd": 2009,
@@ -68,7 +68,7 @@
   "experiences": [
     {
       "display": true,
-      "title": "Développeur web",
+      "title": "Formation développeur web",
       "description": "Projet 1: L'art rend visible (<span class=\"language\">HTML, CSS</span>)<br>Projet 2: Blog (<span class=\"language\">HTML, CSS, PHP, SQL</span>)",
       "project": {
         "API Catalogue Produit": {
@@ -172,5 +172,43 @@
     "Réaliser une interface utilisateur avec un CMS (<span class=\"language\">Wordpress</span>).",
     "Elaborer et mettre en œuvre des composants dans un CMS (<span class=\"language\">Wordpress</span>).",
     "Maquetter une application (<span class=\"language\">Figma, Adobe XD</span>)."
+  ],
+  "portfolio": [
+    {
+      "name": "Portfolio",
+      "image": "https://madraz.fr/assets/img/portfolio/full/portfolio.png",
+      "imageMin": "https://madraz.fr/assets/img/portfolio/portfolio600x350.png",
+      "link": {
+        "github": "https://github.com/madraz79/portfolio",
+        "web": "https://madraz.fr/"
+      }
+    },
+    {
+      "name": "Blog",
+      "image": "https://madraz.fr/assets/img/portfolio/full/blog.png",
+      "imageMin": "https://madraz.fr/assets/img/portfolio/blog600x350.png",
+      "link": {
+        "github": "https://github.com/madraz79/blog",
+        "web": "https://site.madraz.fr/blog/"
+      }
+    },
+    {
+      "name": "API Catalogue Produit",
+      "image": "https://madraz.fr/assets/img/portfolio/full/API-Platforme_Ecommerce.png",
+      "imageMin": "https://madraz.fr/assets/img/portfolio/API-Platforme_Ecommerce600x350.png",
+      "link": {
+        "github": "https://github.com/madraz79/Platforme_Gestion_Ecommerce",
+        "web": "https://site.madraz.fr/api"
+      }
+    },
+    {
+      "name": "L'art rend visible",
+      "image": "https://madraz.fr/assets/img/portfolio/full/artRendVisible.png",
+      "imageMin": "https://madraz.fr/assets/img/portfolio/artRendVisible600x350.png",
+      "link": {
+        "github": "https://github.com/madraz79/artvisible",
+        "web": "https://site.madraz.fr/artvisible/"
+      }
+    }
   ]
 }
